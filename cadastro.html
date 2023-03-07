@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row login-form" style="margin: 0 auto; margin-top: 250px;">
+            <form class="container box">
+              <div class="box-titulo text-center">
+                <h2 class="titulo">Resgistre-se</h2>
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>
+              </div>
+                <div class="mb-3">
+                    <label id="labelNome" for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" aria-describedby="usuario" placeholder="Digite seu nome!">
+                </div>
+
+                <div class="mb-3">
+                  <label id="labelUsuario" for="usuario" class="form-label">Usuário</label>
+                  <input type="text" class="form-control" id="usuario" aria-describedby="usuario" placeholder="Digite seu usuário!">
+                </div>
+
+                <div class="mb-3">
+                  <label id="labelSenha" for="senha" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="senha" placeholder="Digite sua senha!">
+                </div>
+
+                <div class="mb-3">
+                    <label id="labelConfirmSenha" for="confirmSenha" class="form-label">Confirmar senha</label>
+                    <input type="password" class="form-control" id="confirmSenha" placeholder="Digite sua senha novamente!">
+                  </div>
+                
+                
+            </form>
+                <button onclick="cadastrar()" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="src/js/cadastro.js"></script>
+    
+</body>
+</html>

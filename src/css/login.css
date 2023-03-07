@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(26, 26, 172), rgb(126, 24, 24));
+}
+
+.login-form{
+    margin: 0 auto;
+    width: 350px;
+    font-weight: bold;
+    background-color: rgba(90, 68, 143,0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+.box-titulo .titulo {
+    color: white;
+}
+
+.login-form button:first-of-type {
+    margin-bottom: 10px;
+}
+
+.registrar-botao {
+    color: #fff;
+    font-weight: lighter;
+}
+
+.registrar-botao a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.registrar-botao a:hover {
+    color: #8a8989;
+}
