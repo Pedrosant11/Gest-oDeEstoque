@@ -1,11 +1,16 @@
-var logado = false
+let userLogado = JSON.parse(localStorage.getItem('userLogado'))
 
-if(localStorage.getItem("acesso") == "true") {
-    logado = true
-    console.log("entrou")
+let logado = document.querySelector('#logado')
+
+logado.innerHTML = `Olá, ${userLogado.nome}`
+
+if(localStorage.getItem('token') == null){
+    alert('Você precisa estar logado para acessar esta página')
+    window.location.href = '../login.html'
 }
 
-if(logado != true){
-    alert("Você não está autenticado!")
-    window.location.href="login.html"
+function sair(){
+    localStorage.removeItem('token')
+    localStorage.removeItem('userLogado')
+    window.location.href = '../login.html'
 }

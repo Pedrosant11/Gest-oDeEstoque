@@ -39,3 +39,11 @@ body {
 .registrar-botao a:hover {
     color: #8a8989;
 }
+
+#msgError {
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
